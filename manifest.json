@@ -1,0 +1,17 @@
+{
+  "name": "Жаргалант 40-р төгсөлт",
+  "short_name": "Жаргалант 40",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#101b35",
+  "theme_color": "#101b35",
+  "icons": [
+    {
+      "src": "./Жаргалант%2040%20Volleyball%20Emblem.png",
+      "sizes": "any",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

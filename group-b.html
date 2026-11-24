@@ -31,6 +31,38 @@
       height: 420px;
       border: 0;
     }
+    .dashboard {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 18px;
+  align-items: stretch;
+  margin-top: 25px;
+}
+
+.stats, .chart {
+  background: white;
+  border-radius: 12px;
+  padding: 12px;
+  min-width: 0;
+}
+
+.stats iframe {
+  width: 100%;
+  height: 300px;
+  border: 0;
+}
+
+.chart iframe {
+  width: 100%;
+  height: 420px;
+  border: 0;
+}
+
+@media (max-width: 650px) {
+  .dashboard {
+    grid-template-columns: 1fr;
+  }
+}
     a {
       color: #f3d77a;
     }
@@ -41,12 +73,22 @@
     <h1>Б БҮЛЭГ</h1>
     <p>20 жилийн уулзалтад оролцох судалгааны үр дүн</p>
 
-    <div class="chart">
-      <iframe
-        src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQWK1RAD-Kpr0-cn42hu-M-dX31dVBsQeAc3hWCjjBcMMm0W9coAGPIEH0TIZA_lrJCMkZytm-B3vhQ/pubchart?oid=359620991&format=interactive"
-        allowfullscreen>
-      </iframe>
-    </div>
+   <div class="dashboard">
+
+  <div class="stats">
+    <iframe
+      src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQWK1RAD-Kpr0-cn42hu-M-dX31dVBsQeAc3hWCjjBcMMm0W9coAGPIEH0TIZA_lrJCMkZytm-B3vhQ/pubhtml?gid=987518795&single=true&widget=true&headers=false&range=D1:E8">
+    </iframe>
+  </div>
+
+  <div class="chart">
+    <iframe
+      src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQWK1RAD-Kpr0-cn42hu-M-dX31dVBsQeAc3hWCjjBcMMm0W9coAGPIEH0TIZA_lrJCMkZytm-B3vhQ/pubchart?oid=359620991&format=interactive"
+      allowfullscreen>
+    </iframe>
+  </div>
+
+</div>
 
     <p><a href="./groups.html">← Бүлгүүдийн жагсаалт руу буцах</a></p>
   </div>
